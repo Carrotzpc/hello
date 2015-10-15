@@ -31,8 +31,6 @@ http.createServer(function (request, response) {
 }).listen(5000)
 
 console.log('Node app is running at localhost:' + 5000 + '/');
-console.log('>>>>>>>> webhook test1 <<<<<<<<<<');
-console.log('>>>>>>>> webhook test2 <<<<<<<<<<');
-console.log('>>>>>>>> webhook test3 <<<<<<<<<<');
-console.log('>>>>>>>> webhook test4 <<<<<<<<<<');
+
+console.log('>>>>>>>>This is a webhook test. <<<<<<<<<<');
 
