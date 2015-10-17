@@ -1,6 +1,6 @@
 # Dockerfile to create a docker image
 FROM node
-
+# 中文测试
 # Add files to the image
 RUN mkdir -p /opt/nodejs
 ADD . /opt/nodejs
