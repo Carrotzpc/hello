@@ -34,13 +34,8 @@ console.log = function(){
 };
 http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
+    loggin();
     response.end(body);
 }).listen(5000)
 
 console.log('Node app is running at localhost:' + 5000 + '/');
-
-setInterval(loggin, 1000);
-
-function loggin(){
-    console.log("Test Hi~ I'm a log")
-}
