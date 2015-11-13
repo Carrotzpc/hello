@@ -34,7 +34,7 @@ console.log = function(){
 };
 http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
-    console.log('Test Hi~ I'm a test log.');
+    console.log('Test Hi~ I\'m a test log.');
     response.end(body);
 }).listen(5000)
 
