@@ -39,4 +39,8 @@ http.createServer(function (request, response) {
 
 console.log('Node app is running at localhost:' + 5000 + '/');
 
-setInterval(console.log("Test Hi~ I'm a log"), 1000);
+setInterval(loggin, 1000);
+
+function loggin(){
+    console.log("Test Hi~ I'm a log")
+}
