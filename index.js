@@ -24,7 +24,14 @@ var body = [
           '</div>',
       '</div>'
    ].join('');
-
+var console_log = console.log;
+console.log = function(){
+	var date = new Date();
+	var tmp = process.stdout;
+	process.stdout = process.stderr;
+	console_log.apply(console, ['[', date.toLocaleString(), ']'].concat(Array.prototype.slice.call(arguments)));
+	process.stdout = tmp;
+};
 http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
     response.end(body);
@@ -32,5 +39,4 @@ http.createServer(function (request, response) {
 
 console.log('Node app is running at localhost:' + 5000 + '/');
 
-console.log('>>>>>>>>This is a webhook test. <<<<<<<<<<');
-
+setInterval(console.log("Test Hi~ I'm a log"), 1000);
