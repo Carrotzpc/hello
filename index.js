@@ -38,4 +38,4 @@ http.createServer(function (request, response) {
     response.end(body);
 }).listen(5000)
 
-console.log('Node app is running at localhost:' + 5000 + '/');
+console.log('Node app dev is running at localhost:' + 5000 + '/');
