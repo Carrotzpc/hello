@@ -1,5 +1,5 @@
 # Dockerfile to create a docker image
-FROM node
+FROM index.tenxcloud.com/docker_library/node:4.2.5
 # 中文测试
 # Add files to the image
 RUN mkdir -p /opt/nodejs
