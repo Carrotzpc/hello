@@ -39,4 +39,4 @@ http.createServer(function (request, response) {
 }).listen(5000)
 
 console.log('Node app is running at localhost:' + 5000 + '/');
-console.log('2016-5-26 15:22:07', 'test webhook')
+console.log('[info]', 'test webhook')
