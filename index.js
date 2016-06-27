@@ -19,7 +19,7 @@ var body = [
           '<span style="display: inline-block;width: 170px;height: 40px;background: url(https://www.tenxcloud.com/images/index/logo.png) 0 0/95% no-repeat;position: relative;top: 13px;">',
           '</span>',
           '<div style="width:100%;pading:50px 100px;text-align:center;">',
-              '<h1>Hello World</h1>',
+              '<h1>Hello World test!</h1>',
               '<p>Welcome to Node app.</span></p>',
           '</div>',
       '</div>'
